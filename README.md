@@ -1,8 +1,9 @@
-MariaDB 10.1 Standalone CentOS 7
+**MariaDB 10.1 Standalone CentOS 7**
 ==================
 
-Custom image based on (docker-library/mariadb), using CentOS 7, Official MariaDB Repository and adds SSHD via supervisord. Standalone (non-galera) installation.
+CentOS 7 MariaDB 10.1 standalone installation from the official MariaDB repository. Includes supervisord and sshd. Will automatically run any sql scripts in /docker-entrypoint-initdb.d as part of startup. 
 
+---
 # What is MariaDB?
 
 MariaDB is a community-developed fork of the MySQL relational database management system intended to remain free under the GNU GPL. Being a fork of a leading open source software system, it is notable for being led by the original developers of MySQL, who forked it due to concerns over its acquisition by Oracle. Contributors are required to share their copyright with the MariaDB Foundation.
