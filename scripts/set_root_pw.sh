@@ -1,5 +1,7 @@
 #!/bin/bash
 
+exec 1> >(logger -s -t $(basename $0)) 2>&1
+
 if [ -f /.root_pw_set ]; then
 	echo "Root password already set!"
 	exit 0

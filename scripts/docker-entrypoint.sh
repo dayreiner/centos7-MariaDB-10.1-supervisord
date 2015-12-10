@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-set -x
+#set -x
 
 exec 1> >(logger -s -t $(basename $0)) 2>&1
 

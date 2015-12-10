@@ -1,5 +1,7 @@
 #!/bin/bash
 
+exec 1> >(logger -s -t $(basename $0)) 2>&1
+
 if [ "${AUTHORIZED_KEYS}" != "**None**" ]; then
     echo "=> Found authorized keys"
     mkdir -p /root/.ssh
